@@ -1,15 +1,6 @@
 # luainkernel.github.io
 
-Website of [Lua in Kernel](https://github.com/luainkernel): Lunatik, the Lua libraries around it
-and the other projects of the organization.
+The page of [Lua in Kernel](https://github.com/luainkernel) at <https://luainkernel.github.io/>: Lunatik
+and the projects around it. The Lunatik docs are at <https://luainkernel.github.io/lunatik/>.
 
-Static site, no build. Open `index.html` or serve the folder:
-
-```
-python3 -m http.server 8000
-```
-
-- `index.html`: page with all the repositories of the organization (Lunatik, Lua, and the rest)
-- `style.css`, `site.js`: style, light/dark theme and the repository filter
-
-The Lunatik docs are in <https://luainkernel.github.io/lunatik/>.
+A static page with no build: `index.html` and `style.css`, served as they are by GitHub Pages.
