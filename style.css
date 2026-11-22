@@ -1,5 +1,5 @@
 :root {
-	--bg: #fbfbfc; --surface: #ffffff; --text: #1b2130; --muted: #5c6475; --faint: #8a91a3;
+	--bg: #fbfbfc; --surface: #ffffff; --text: #1b2130; --muted: #5c6475; --faint: #6b7385;
 	--border: #e3e6ee; --accent: #2f58cd; --accent-hover: #1f44b0; --accent-soft: #e9eefc;
 	--moon: #9a6c0a; --moon-soft: #fbf3dc; --logo: #13139a; --code-bg: #f0f2f7;
 	--sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -8,7 +8,7 @@
 }
 @media (prefers-color-scheme: dark) {
 	:root {
-		--bg: #0b0e1a; --surface: #10142a; --text: #dde2f0; --muted: #97a0b8; --faint: #6b7390;
+		--bg: #0b0e1a; --surface: #10142a; --text: #dde2f0; --muted: #97a0b8; --faint: #848ca8;
 		--border: #232a44; --accent: #8aa9ff; --accent-hover: #b3c7ff; --accent-soft: #1a2248;
 		--moon: #f0cf6a; --moon-soft: #2a2512; --logo: #c9cfff; --code-bg: #151a33;
 		color-scheme: dark;
@@ -50,7 +50,7 @@ section { margin-bottom: 40px; }
 h2 { font-size: 1.25rem; margin: 0 0 16px; }
 .cards {
 	list-style: none; margin: 0; padding: 0;
-	display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px;
+	display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 400px), 1fr)); gap: 16px;
 }
 .cards li {
 	background: var(--surface); border: 1px solid var(--border); border-radius: 12px;
@@ -59,6 +59,7 @@ h2 { font-size: 1.25rem; margin: 0 0 16px; }
 .cards h3 { font-size: 1.05rem; margin: 0 0 8px; }
 .cards p { margin: 0; color: var(--muted); }
 .cards .links { margin-top: auto; padding-top: 14px; display: flex; gap: 16px; font-size: .95rem; }
+.cards.small { grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr)); }
 .cards.small li { padding: 16px; }
 .cards.small p { font-size: .95rem; }
 .tag {
